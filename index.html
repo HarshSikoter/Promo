@@ -6,12 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>XcelUP Early Testing Program – September 2025</title>
   <meta name="description" content="Join our invite-only XcelUP Early Testing Program this September. Watch the promo video, see exactly what you get, and learn how to participate. Create up to 5 learning paths, earn 2 certifications across two windows, share feedback, and qualify for a ₹2000 honorarium upon successful completion of certifications." />
+  
+  
+<link rel="icon" type="image/png" sizes="192x192" href="https://res.cloudinary.com/dbjqzvmrs/image/upload/v1756154230/Logo_xcuu5e.png">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:title" content="XcelUP Early Testing Program – September 2025">
   <meta property="og:description" content="Invite‑only: 2 windows, 2 certifications, ₹2000 honorarium upon completion, feedback required, limited seats." />
   <meta property="og:type" content="website">
-  <meta property="og:image" content="Logo.png">
+  <meta property="og:image" content="https://res.cloudinary.com/dbjqzvmrs/image/upload/v1756154230/Logo_xcuu5e.png">
   <meta property="og:url" content="https://example.com/early-testing">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -41,12 +44,62 @@
     .top-banner { background:linear-gradient(90deg, var(--brand), var(--brand-2)); color:#fff; text-align:center; font-weight:800; padding:10px 16px; letter-spacing:.3px; }
 
     /* Header */
-    header { position:sticky; top:0; background:rgba(2,6,23,.65); border-bottom:1px solid rgba(148,163,184,.15); backdrop-filter:saturate(140%) blur(10px); z-index:40; }
-    .nav { display:flex; align-items:center; justify-content:space-between; gap:16px; }
-    .brand { display:flex; align-items:center; gap:12px; font-weight:800; }
-    .brand img { height:36px; }
-    .btn { display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:999px; font-weight:700; text-decoration:none; color:#fff; background:linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow:var(--shadow-1); border:1px solid transparent; }
-    .btn:hover { transform:translateY(-1px); box-shadow:var(--shadow-2); }
+   
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(2,6,23,.65);
+      border-bottom: 1px solid rgba(148,163,184,.15);
+      backdrop-filter: saturate(140%) blur(10px);
+      z-index: 40;
+    }
+    
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 8px; /* little breathing room */
+      font-weight: 800;
+    }
+    
+    .brand img {
+      height: 70px;   /* keeps logo proportionate */
+      width: auto;    /* prevents distortion */
+    }
+    
+    .brand-name {
+      font-size: 22px;
+      font-weight: 800;
+      color: #e5e7eb; /* matches site text */
+      letter-spacing: 0.5px;
+    }
+    
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      box-shadow: var(--shadow-1);
+      border: 1px solid transparent;
+    }
+    
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-2);
+    }
+    
 
     /* Hero */
     .hero { padding:44px 24px 10px; text-align:center; }
@@ -81,6 +134,7 @@
     footer { color:#9aa8bd; border-top:1px solid rgba(148,163,184,.15); margin-top:28px; }
     footer .foot{ padding:24px; display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; }
     
+    
   </style>
 </head>
 <body>
@@ -89,8 +143,9 @@
   <header>
     <div class="container nav">
       <div class="brand">
-        <img src="Logo.png" alt="XcelUP Logo" />
-        <span>XcelUP</span>
+        <img src="https://res.cloudinary.com/dbjqzvmrs/image/upload/v1756154230/Logo_xcuu5e.png" 
+             alt="XcelUP Logo" />
+        <span class="brand-name">XcelUP</span>
       </div>
       <nav>
         <a class="btn" href="#participation">Apply / Participate</a>
